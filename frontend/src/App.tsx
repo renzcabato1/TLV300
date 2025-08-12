@@ -178,31 +178,28 @@ function App() {
 											<tbody>
 												<tr className="bg-white hover:bg-gray-50 border-b border-gray-200">
 													<th scope="col" className="px-6 py-3">
-														Registrant Name:
+														Registrant Name
 													</th>
-													<th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-														{  domainDetails.contactInformation.registrantName }
+													<th scope="col" className="px-6 py-3">
+														Technical Contact Name
 													</th>
+													<th scope="col" className="px-6 py-3">
+														Administrative Contact Name
+													</th>
+													<th scope="col" className="px-6 py-3">
+														Contact Email
+													</th>
+													
 												</tr>
 												<tr className="bg-white hover:bg-gray-50 border-b  border-gray-200">
-													<th scope="col" className="px-6 py-3">
-														Technical Contact Name:
+													<th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+														{  domainDetails.contactInformation.registrantName }
 													</th>
 													<th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
 														{ domainDetails.contactInformation.technicalContactName }
 													</th>
-												</tr>
-												<tr className="bg-white hover:bg-gray-50 border-b  border-gray-200">
-													<th scope="col" className="px-6 py-3">
-														Administrative Contact Name:
-													</th>
 													<th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
 														{ domainDetails.contactInformation.administrativeContactName }
-													</th>
-												</tr>
-												<tr className="bg-white hover:bg-gray-50 border-b  border-gray-200">
-													<th scope="col" className="px-6 py-3">
-														Contact Email:
 													</th>
 													<th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
 														{ domainDetails.contactInformation.contactEmail }
