@@ -3,17 +3,17 @@
 **Author:** Renz Christian Cabato – Fullstack Developer  
 
 **Backend Stack:**  
-- Node Js  
-- Express Js  
+- Node.js  
+- Express.js  
 
-**Front Stack:**  
-- React Js
+**Frontend Stack:**  
+- React.js  
 
 ---
 
 ## 📌 Overview
 This API allows you to handle domain-related requests through a simple REST interface.  
-You can run it locally for development and testing purposes.
+It can be run locally for development and testing purposes.
 
 ---
 
@@ -23,26 +23,62 @@ You can run it locally for development and testing purposes.
 ```bash
 # Clone the repository
 git clone https://github.com/renzcabato1/TLV300
-
-# Navigate to the project folder
-#go to terminal inside where to clone the project
-
-#command for terminal
+2️⃣ Navigate to the Backend Directory
+bash
+Copy
+Edit
 cd backend
-copy .env.example .env #i will send the api key via Email "copy for windows cp for linux or mac"
-npm install #to install all dependencies
-npm run build # to build the project
-npm start #start the backend The server will start on: http://localhost:5001
+3️⃣ Setup Environment Variables
+Copy the .env.example file to .env.
+For Windows:
 
+bash
+Copy
+Edit
+copy .env.example .env
+For macOS/Linux:
 
-## 🔍 Testing the API
+bash
+Copy
+Edit
+cp .env.example .env
+The API key will be sent via email — add it to your .env file.
 
-You can test the API using **Postman** 
+4️⃣ Install Dependencies
+bash
+Copy
+Edit
+npm install
+5️⃣ Build the Project
+bash
+Copy
+Edit
+npm run build
+6️⃣ Start the Backend Server
+bash
+Copy
+Edit
+npm start
+The backend will start at:
 
+arduino
+Copy
+Edit
+http://localhost:5001
+🔍 Testing the API
+You can test the API using Postman.
+
+Endpoint:
+
+bash
+Copy
+Edit
 POST http://localhost:4000/api/domain
+Request Body Example (JSON):
 
-**Request Body Example (JSON):**  
-```json
+json
+Copy
+Edit
 {
   "domain": "example.com"
 }
