@@ -77,7 +77,7 @@ POST http://localhost:5001/api/domain
 **Request Body Example (JSON):**
 ```json
 {
-  "domain": "example.com"
+  "domain": "google.com"
 }
 ```
 
