@@ -23,62 +23,66 @@ It can be run locally for development and testing purposes.
 ```bash
 # Clone the repository
 git clone https://github.com/renzcabato1/TLV300
-2️⃣ Navigate to the Backend Directory
-bash
-Copy
-Edit
+```
+
+### 2️⃣ Navigate to the Backend Directory
+```bash
 cd backend
-3️⃣ Setup Environment Variables
-Copy the .env.example file to .env.
+```
+
+### 3️⃣ Setup Environment Variables
+Copy the `.env.example` file to `.env`.  
 For Windows:
-
-bash
-Copy
-Edit
+```bash
 copy .env.example .env
+```
 For macOS/Linux:
-
-bash
-Copy
-Edit
+```bash
 cp .env.example .env
-The API key will be sent via email — add it to your .env file.
+```
+> The API key will be sent via email — add it to your `.env` file.
 
-4️⃣ Install Dependencies
-bash
-Copy
-Edit
+---
+
+### 4️⃣ Install Dependencies
+```bash
 npm install
-5️⃣ Build the Project
-bash
-Copy
-Edit
+```
+
+### 5️⃣ Build the Project
+```bash
 npm run build
-6️⃣ Start the Backend Server
-bash
-Copy
-Edit
+```
+
+### 6️⃣ Start the Backend Server
+```bash
 npm start
-The backend will start at:
-
-arduino
-Copy
-Edit
+```
+The backend will start at:  
+```
 http://localhost:5001
-🔍 Testing the API
-You can test the API using Postman.
+```
 
-Endpoint:
+---
 
-bash
-Copy
-Edit
-POST http://localhost:4000/api/domain
-Request Body Example (JSON):
+## 🔍 Testing the API
 
-json
-Copy
-Edit
+You can test the API using **Postman**.
+
+**Endpoint:**  
+```
+POST http://localhost:5001/api/domain
+```
+
+**Request Body Example (JSON):**
+```json
 {
   "domain": "example.com"
 }
+```
+
+---
+
+## 📄 Notes
+- Make sure your `.env` file is properly configured before running the server.
+- Ensure the backend is running before making API requests.
