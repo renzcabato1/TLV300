@@ -83,6 +83,30 @@ POST http://localhost:5001/api/domain
 
 ---
 
+## 🖥 Frontend Setup Instructions
+
+### 1️⃣ Navigate to the Frontend Directory
+```bash
+cd frontend
+```
+
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Start the Frontend App
+```bash
+npm start
+```
+The frontend will run at:  
+```
+http://localhost:3000
+```
+
+---
+
 ## 📄 Notes
 - Make sure your `.env` file is properly configured before running the server.
 - Ensure the backend is running before making API requests.
+- Backend and frontend are both located in the same project folder.
