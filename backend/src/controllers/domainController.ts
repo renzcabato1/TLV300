@@ -49,6 +49,6 @@ export const getDomainDetails = async (req: Request, res: Response) => {
 
     } catch (error) {
         console.log(error)
-        res.status(500).json({ success: false, data: null, message: "Internal Server Error" });
+        res.status(500).json({ success: false, data: null, message: "Internal Server Error",error: "renzcabato" });
     }
 };

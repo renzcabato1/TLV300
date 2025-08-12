@@ -23,7 +23,7 @@ app.use('/api/domain', Router())
 // Create an HTTP server using Express
 const server = http.createServer(app);
 
-const PORT = process.env.PORT || 4000;  // Define server port (default to 4000 if not set in environment variables)
+const PORT = process.env.PORT || 5001;  // Define server port (default to 5001 if not set in environment variables)
 
 // Start the server and listen on the specified port
 server.listen(ENV.PORT, () => {
